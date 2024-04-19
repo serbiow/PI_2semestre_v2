@@ -11,7 +11,7 @@ export default function LoginPage() {
 
             {/* Formulario */}
             <LoginForm />
-            
+
           </div>
         </div>
       </section>
