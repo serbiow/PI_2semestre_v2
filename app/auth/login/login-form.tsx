@@ -20,6 +20,7 @@ export function LoginForm() {
               placeholder="Email"
               name="email"
               id="email"
+              required
             />
           </label>
 
@@ -32,6 +33,7 @@ export function LoginForm() {
               placeholder="Senha"
               name="password"
               id="password"
+              required
             />
           </label>
 
