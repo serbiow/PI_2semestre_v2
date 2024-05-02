@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useFormState } from "react-dom";
 
 export function LoginForm() {
+  const errorsState = { message: null, errors: {} }
   const [state, dispatch] = useFormState(authenticate, undefined)
 
   return (
@@ -33,6 +34,7 @@ export function LoginForm() {
               id="password"
             />
           </label>
+
           <button className="bg-[#010E21] text-[#E7C7A1] rounded-xl pt-3 py-3 mt-3 hover:bg-[#445a7e] transition-all">
             LOGIN
           </button>

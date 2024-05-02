@@ -5,12 +5,9 @@ import { usePathname } from "next/navigation";
 
 
 export default function Home() {
-  return (
-    <main className="bg-[#09172C] ">
+    return (
+        <main className="bg-[#09172C] ">
             <header className="text-[E7C7A1]">
-           
-
-
                 <section className="text-2xl h-auto bg-black text-[#E7C7A1] pt-36 py-44 justify-center text-center">
                     <h4 className="">O QUE É O STUDIO TAILINE?</h4>
                     <p className="text-white text-sm mt-6">O Studio Tailene é um local especializado em design
@@ -67,5 +64,5 @@ export default function Home() {
 
 
         </main>
-  )
+    )
 }

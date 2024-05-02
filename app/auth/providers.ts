@@ -12,8 +12,8 @@ const providers = {
         Credentials({
             async authorize(credentials){
                 const parsedCredentials = z.object({
-                    email: z.string().email('Insira um e-mail válido'),
-                    password: z.string().min(8, 'A senha deve conter no minimo 8 caracteres')
+                    email: z.string({ required_error: 'O email é obrigatório' }).email('Insira um e-mail válido'),
+                    password: z.string({ required_error: 'A senha é obrigatória' }).min(8, 'A senha deve conter no minimo 8 caracteres')
                 }).safeParse(credentials)
 
                 if (parsedCredentials.success){
@@ -28,6 +28,7 @@ const providers = {
                     }
 
                 }
+                
                 return null
             }
         })
